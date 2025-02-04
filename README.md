@@ -23,6 +23,31 @@ Frostdev Recipe Generator is a tool designed to help you create crafting recipes
     ```sh
     pip install -r requirements.txt
     ```
+## Generating an Executable
+
+To generate an executable (.exe) file for the Wowid Recipe Generator, follow these steps:
+
+1. Ensure you have `pyinstaller` installed:
+    ```sh
+    pip install pyinstaller
+    ```
+
+2. Navigate to the project directory:
+    ```sh
+    cd wowid-recipe-generator
+    ```
+
+3. Run `pyinstaller` to generate the executable:
+    ```sh
+    pyinstaller --onefile generator.py
+    ```
+
+4. The executable will be created in the `dist` directory:
+    ```sh
+    dist/generator.exe
+    ```
+
+You can now distribute the `generator.exe` file to users who can run the Wowid Recipe Generator without needing to install Python or any dependencies.
 
 ## Usage
 
@@ -56,29 +81,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For any questions or suggestions, please open an issue on GitLab or contact the project maintainer at your.email@example.com.
-## Generating an Executable
-
-To generate an executable (.exe) file for the Wowid Recipe Generator, follow these steps:
-
-1. Ensure you have `pyinstaller` installed:
-    ```sh
-    pip install pyinstaller
-    ```
-
-2. Navigate to the project directory:
-    ```sh
-    cd wowid-recipe-generator
-    ```
-
-3. Run `pyinstaller` to generate the executable:
-    ```sh
-    pyinstaller --onefile generator.py
-    ```
-
-4. The executable will be created in the `dist` directory:
-    ```sh
-    dist/generator.exe
-    ```
-
-You can now distribute the `generator.exe` file to users who can run the Wowid Recipe Generator without needing to install Python or any dependencies.
+For any questions or suggestions, please open an issue on GitLab or contact the project maintainer at magnus@frostdev.io.
